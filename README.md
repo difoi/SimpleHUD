@@ -1,5 +1,5 @@
 # SimpleHUD
-SimpleHUD
+##SimpleHUD (编写语言:Swift)
 
 基于SwiftNoticeSDK开发, 修改部分内容  感谢 SwiftNotice
 原声SwiftNotice https://github.com/johnlui/
