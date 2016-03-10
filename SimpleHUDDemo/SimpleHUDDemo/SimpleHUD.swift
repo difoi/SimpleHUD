@@ -336,8 +336,6 @@ class SimpleHUD: NSObject {
         label.textAlignment = NSTextAlignment.Left
         label.sizeToFit()
         mainView.addSubview(label)
-        
-        print(label.frame.width)
         let frame = CGRectMake(0, 0, label.frame.width+35, 30)
         mainView.frame = frame
         window.windowLevel = UIWindowLevelAlert
@@ -399,6 +397,7 @@ class SimpleHUD: NSObject {
         label.textAlignment = NSTextAlignment.Center
         mainView.addSubview(label)
         
+        
         mainView.frame = frame
         window.windowLevel = UIWindowLevelAlert
         
@@ -415,6 +414,7 @@ class SimpleHUD: NSObject {
         // change orientation
         window.transform = CGAffineTransformMakeRotation(CGFloat(degree * M_PI / 180))
         window.hidden = false
+        
         window.addSubview(mainView)
         windows.append(window)
         
@@ -533,6 +533,7 @@ class SimpleHUD: NSObject {
         if(windows.count>0){return}
         let frame = UIApplication.sharedApplication().statusBarFrame
         let window = UIWindow()
+        
         window.backgroundColor = UIColor.clearColor()
         let view = UIView()
         view.backgroundColor = UIColor(red: 0x6a/0x100, green: 0xb4/0x100, blue: 0x9f/0x100, alpha: 1)
@@ -562,13 +563,7 @@ class SimpleHUD: NSObject {
     }
     
     static func hideNotice(sender: AnyObject) {
-        if let window = sender as? UIWindow {
-            if let index = windows.indexOf({ (item) -> Bool in
-                return item == window
-            }) {
-                windows.removeAtIndex(index)
-            }
-        }
+        clear()
     }
     
     //获取hud居中

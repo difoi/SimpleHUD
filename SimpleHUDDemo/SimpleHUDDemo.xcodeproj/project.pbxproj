@@ -12,6 +12,7 @@
 		1E41B08D1C912C71003A3D40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E41B08B1C912C71003A3D40 /* Main.storyboard */; };
 		1E41B08F1C912C71003A3D40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E41B08E1C912C71003A3D40 /* Assets.xcassets */; };
 		1E41B0921C912C71003A3D40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E41B0901C912C71003A3D40 /* LaunchScreen.storyboard */; };
+		1E41B09B1C912C8A003A3D40 /* SimpleHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E41B09A1C912C8A003A3D40 /* SimpleHUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1E41B08E1C912C71003A3D40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E41B0911C912C71003A3D40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E41B0931C912C71003A3D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E41B09A1C912C8A003A3D40 /* SimpleHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleHUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		1E41B0861C912C71003A3D40 /* SimpleHUDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1E41B09A1C912C8A003A3D40 /* SimpleHUD.swift */,
 				1E41B0871C912C71003A3D40 /* AppDelegate.swift */,
 				1E41B0891C912C71003A3D40 /* ViewController.swift */,
 				1E41B08B1C912C71003A3D40 /* Main.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					1E41B0831C912C71003A3D40 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z592X75Z3R;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E41B08A1C912C71003A3D40 /* ViewController.swift in Sources */,
+				1E41B09B1C912C8A003A3D40 /* SimpleHUD.swift in Sources */,
 				1E41B0881C912C71003A3D40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +252,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimpleHUDDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Fish.SimpleHUDDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -258,7 +265,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimpleHUDDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Fish.SimpleHUDDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
